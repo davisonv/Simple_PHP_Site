@@ -24,22 +24,22 @@
 	
 	<div class="container" style="margin-top: 40px" id="TamanhoContainer">
 		<h4>Cadastro de Produtos</h4>
-		<form style="margin-top: 20px">
+		<form action="_inserir_produto.php" method="post" style="margin-top: 20px">
 			<div class="form-group">
 	   	 		<label>Nome do Produto</label>
-	   	 		<input type="text" class="form-control" placeholder="Insira o nome do produto">
+	   	 		<input type="text" class="form-control" name="nmproduto" placeholder="Insira o nome do produto" required>
 	 		</div>
 			<div class="form-group">
 	   	 		<label>Nº do Produto</label>
-	   	 		<input type="number" class="form-control" placeholder="Insira o número do produto">
+	   	 		<input type="number" class="form-control" name="nrproduto" placeholder="Insira o número do produto" required>
 	 		</div>
 	 		<div class="form-group">
 	   	 		<label>Quantidade do Produto</label>
-	   	 		<input type="number" class="form-control" placeholder="Insira a quantidade do produto">
+	   	 		<input type="number" class="form-control" name="qtproduto" placeholder="Insira a quantidade do produto" required>
 	 		</div>
 	 		<div class="form-group">
 	    		<label>Categoria</label>
-	   				<select class="form-control">
+	   				<select class="form-control" name="categoria" >
 	     				<option>Periféricos</option>
 	      				<option>Hardware</option>
 	      				<option>Software</option>
@@ -48,7 +48,7 @@
 	 		</div>
 	 		<div class="form-group">
 	    		<label>Fornecedor</label>
-	   				<select class="form-control">
+	   				<select class="form-control" name="fornecedor">
 	     				<option>Razer</option>
 	      				<option>HP</option>
 	      				<option>DELL</option>
