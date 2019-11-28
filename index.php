@@ -3,7 +3,8 @@
 <head>
 	
 	<title>Formulário</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
 	<meta charset="utf-8">
 	<style type="text/css">
 		#TamanhoContainer{
@@ -24,7 +25,7 @@
 	
 	<div class="container" style="margin-top: 40px" id="TamanhoContainer">
 		<h4>Cadastro de Produtos</h4>
-		<form action="_inserir_produto.php" method="post" style="margin-top: 20px">
+		<form action="insere_produto.php" method="post" style="margin-top: 20px">
 			<div class="form-group">
 	   	 		<label>Nome do Produto</label>
 	   	 		<input type="text" class="form-control" name="nmproduto" placeholder="Insira o nome do produto" required>
@@ -40,7 +41,7 @@
 	 		<div class="form-group">
 	    		<label>Categoria</label>
 	   				<select class="form-control" name="categoria" >
-	     				<option>Periféricos</option>
+	     				<option>Perifericos</option>
 	      				<option>Hardware</option>
 	      				<option>Software</option>
 	      				<option>Celulares</option>
@@ -56,10 +57,10 @@
 	    			</select>
 	 		</div>
 	 		<div style="text-align: right">
-	 			<button type="submit" class="btn btn-sm" id="botao">Cadastrar</button>
+	 			<button type="submit" id="botao" class="btn btn-sm">Cadastrar</button>
 	 		</div>
 	 	</form>	
  	</div>
 
-</body>
+ </body>
 </html>
